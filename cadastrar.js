@@ -13,7 +13,7 @@ class Veiculo{
     }
 }
 
-
+//FUNÇÃO PARA CADASTRAR VEÍCULO
 function cadastrarVeiculo(){
     const marca = $("#marca");
     const modelo = $("#modelo");
