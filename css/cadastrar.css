@@ -1,0 +1,9 @@
+body {background-color:aliceblue;}
+
+h2 {
+    text-align: center; 
+    padding: 20px;
+    color: black;
+}
+
+.container {background-color: aliceblue; width: 80%;}
