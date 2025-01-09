@@ -13,43 +13,92 @@ class Veiculo {
     }
 }
 
+//FUNÇÕES DE VALIDAÇÃO
+function validarMarcaModelo(valor) {
+    const regex = /^[A-Za-zÀ-ÿ\s]{2,50}$/; // Apenas letras e espaços
+    return regex.test(valor);
+}
+
+function validarAnoFabricacao(valor) {
+    const anoAtual = new Date().getFullYear();
+    return /^[0-9]{4}$/.test(valor) && valor >= 1900 && valor <= anoAtual;
+}
+
+function validarCor(valor) {
+    const regex = /^[A-Za-zÀ-ÿ\s]{3,20}$/;
+    return regex.test(valor);
+}
+
+function validarQuilometragem(valor) {
+    return /^[0-9]+(\.[0-9]{1,2})?$/.test(valor) && parseFloat(valor) >= 0;
+}
+
+function validarNumeroPortas(valor) {
+    return /^[2-5]$/.test(valor);
+}
+
+
+// VALIDAÇÃO DO FORMULÁRIO
+function validarFormulario(marca, modelo, anoFabricacao, cor, tipo, quilometragem, numeroPortas) {
+    if (!validarMarcaModelo(marca)) {
+        alert("A marca é inválida. Use apenas letras, entre 2 e 50 caracteres.");
+        return false;
+    }
+    if (!validarMarcaModelo(modelo)) {
+        alert("O modelo é inválido. Use apenas letras, entre 2 e 50 caracteres.");
+        return false;
+    }
+    if (!validarAnoFabricacao(anoFabricacao)) {
+        alert("O ano de fabricação é inválido. Deve ser entre 1900 e o ano atual.");
+        return false;
+    }
+    if (!validarCor(cor)) {
+        alert("A cor é inválida. Use apenas letras, entre 3 e 20 caracteres.");
+        return false;
+    }
+    if (!validarQuilometragem(quilometragem)) {
+        alert("A quilometragem é inválida. Deve ser um número positivo.");
+        return false;
+    }
+    if (!validarNumeroPortas(numeroPortas)) {
+        alert("O número de portas é inválido. Deve estar entre 2 e 5.");
+        return false;
+    }
+    return true;
+}
+
 // FUNÇÃO PARA CADASTRAR VEÍCULO
 function cadastrarVeiculo() {
-    const marca = $("#marca");
-    const modelo = $("#modelo");
-    const anoFabricacao = $("#anoFabricacao");
-    const cor = $("#cor");
-    const tipo = $("#tipo");
-    const quilometragem = $("#quilometragem");
-    const numeroPortas = $("#numeroPortas");
+    
+    const marca = $("#marca").val();
+    const modelo = $("#modelo").val();
+    const anoFabricacao = $("#anoFabricacao").val();
+    const cor = $("#cor").val();
+    const tipo = $("#tipo").val();
+    const quilometragem = $("#quilometragem").val();
+    const numeroPortas = $("#numeroPortas").val();
+
+    if(!validarFormulario(marca,modelo,anoFabricacao,cor,tipo,quilometragem,numeroPortas)){
+        return true;
+    }
 
     // Verifica se todos os campos foram preenchidos
     if (
-        marca.val() === '' || 
-        modelo.val() === '' || 
-        anoFabricacao.val() === '' || 
-        cor.val() === '' || 
-        tipo.val() === '' || 
-        quilometragem.val() === '' || 
-        numeroPortas.val() === ''
+        marca === '' || 
+        modelo === '' || 
+        anoFabricacao === '' || 
+        cor === '' || 
+        tipo === '' || 
+        quilometragem === '' || 
+        numeroPortas === ''
     ) {
         alert("Todos os campos devem ser preenchidos.");
         console.log(veiculos);
         return;
     }
 
- 
-
     // Cria um novo veículo
-    let veiculo = new Veiculo(
-        marca.val(), 
-        modelo.val(), 
-        anoFabricacao.val(), 
-        cor.val(), 
-        tipo.val(), 
-        quilometragem.val(), 
-        numeroPortas.val()
-    );
+    const veiculo = new Veiculo( marca, modelo, anoFabricacao, cor, tipo, quilometragem, numeroPortas );
 
     veiculos.push(veiculo);
     localStorage.setItem('veiculos', JSON.stringify(veiculos));
@@ -68,6 +117,8 @@ $(document).ready(function () {
         veiculos = JSON.parse(veiculosSalvos);
     }
 
-    $("#btn-cadastrar").click(cadastrarVeiculo); // Chama a função ao clicar no botão
+    $("#btn-cadastrar").click(cadastrarVeiculo);
     console.log(veiculos);
 });
+
+//FUNÇÕES AUXILIARES

@@ -1,4 +1,10 @@
-body {background-color:aliceblue;}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(45deg, cyan, yellow);
+    background-size: cover;
+}
 
 h2 {
     text-align: center; 
@@ -6,4 +12,4 @@ h2 {
     color: black;
 }
 
-.container {background-color: aliceblue; width: 80%;}
+.container {width: 80%;}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova U2</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cadastrar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center my-4">Cadastrar Veículo</h2>
+        <form>
+            <div class="row mb-3">
+                <label for="marca" class="col-sm-2 col-form-label">Marca:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="marca" placeholder="Digite a marca">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="modelo" class="col-sm-2 col-form-label">Modelo:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="modelo" placeholder="Digite o modelo">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="anoFabricacao" class="col-sm-2 col-form-label">Ano de Fabricação:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="anoFabricacao" placeholder="Digite o ano de fabricação">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="cor" class="col-sm-2 col-form-label">Cor:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="cor" placeholder="Digite a cor">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="tipo" class="col-sm-2 col-form-label">Tipo:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="tipo" placeholder="Digite o tipo">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="quilometragem" class="col-sm-2 col-form-label">Quilometragem:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="quilometragem" placeholder="Digite a quilometragem">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="numeroPortas" class="col-sm-2 col-form-label">Número de Portas:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="numeroPortas" placeholder="Digite o número de portas">
+                </div>
+            </div>
+             <!-- BOTÃO -->
+             <div style="margin-top: 20px; display: flex; text-align: center;">
+                <div class="col-sm"> <button type="button" class="btn btn-primary" id="btn-cadastrar" style="width: 20%; border-radius: 10px;">Cadastrar</button> </div>
+            </div> 
+                <br><br>
+        </form>
+    </div>     
+</div>            
+
+<script src="js/cadastrar.js"> </script>
+</body>
+
+</html>
