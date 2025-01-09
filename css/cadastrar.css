@@ -2,14 +2,21 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(45deg, cyan, yellow);
-    background-size: cover;
+    background-image: url(https://wallpapercave.com/wp/wp8023227.jpg); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Garante que a imagem cubra toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem seja repetida */
 }
 
 h2 {
     text-align: center; 
     padding: 20px;
-    color: black;
+    color: aliceblue;
 }
 
-.container {width: 80%;}
+label {
+    color: aliceblue;
+}
+.container {
+    width: 80%;
+}
