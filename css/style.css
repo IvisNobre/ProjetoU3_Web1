@@ -25,18 +25,32 @@ body{
     color: black;
 }
 
+
 p, h1, h2, h3, h4, h5 {
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+h3, h4, h5 {
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
 }
 
 ul{
+    font-family: 'Quicksand', sans-serif;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
     align-items: center;
-    padding: 10px;
+    padding: 2px;
     margin: 0px;
+    color: aliceblue;
+}
+ul .logo-container {
+    display: flex;
+    align-items: center;
+    padding-right: 200px;
 }
 
 a{
