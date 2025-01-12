@@ -1,3 +1,4 @@
+/* Configura a aparência geral */
 html, body {
     height: 100%;
     margin: 0;
@@ -8,15 +9,65 @@ html, body {
     background-repeat: no-repeat; /* Evita que a imagem seja repetida */
 }
 
+body {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+    color: white;
+    text-align: center;
+}
+
+form {
+    padding: 20px;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
 h2 {
     text-align: center; 
     padding: 20px;
     color: aliceblue;
 }
 
-label {
+h2, p, ul, label {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: aliceblue;
 }
-.container {
-    width: 80%;
+
+/* Estilo para inputs */
+.form-control {
+    background-color: transparent; /* Fundo transparente */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Borda sutil */
+    color: white; /* Texto branco */
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7); /* Sombra branca */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
 }
+
+.form-control:focus {
+    outline: none; /* Remove a borda padrão ao focar no input */
+    border: 1px solid rgba(255, 255, 255, 1); /* Borda mais forte ao focar */
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 1); /* Sombra mais forte ao focar */
+}
+
+#container {
+    width: 100%;
+}
+
+#custom-container {
+    
+
+ul{
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 2px;
+    margin: 0px;
+    color: aliceblue;
+}
+

@@ -11,18 +11,21 @@
     
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" > </script>
+
     <title>Prova 03 WEB 1</title>
 
 </head>
 <body>
-    
     <!-- Basicamente, a HEADER-->
-
     <div class="container custom">
         <ul>
+            <a href="index.html">
+                <img src="img/logo.png" style="width: 100px;">
+            </a>
             <li> <a style=" color: aliceblue; font-size: 22px;">Locadora de Veículos</a> </li>
             <li> <a href="">Sobre a empresa</a> </li>
-            <li> <a href="">Listar veículos</a> </li>
+            <li> <a href="listar.html">Listar veículos</a> </li>
             <li> <a href="cadastrar.html">Cadastrar veículo</a> </li>
             <li> <a href="">Excluir veículo</a> </li>
         </ul>
@@ -62,9 +65,10 @@
         </div>
     </div>
     
-    <div class="container custom" style="padding: 5px;">
-        <p style="font-size: 18px; color:aliceblue; text-align: center;">2024 Locadora de Veículos. Todos os direitos reservados.</p>
+    <div class="container custom" style="display: flex; justify-content: center; align-items: center;">
+        <p style="font-size: 18px; color: aliceblue; text-align: center;">2024 Locadora de Veículos. Todos os direitos reservados.</p>
     </div>
+    
    
     <script>
         // Carrega os dados dos veículos do JSON e armazena no localStorage
@@ -80,6 +84,7 @@
                 localStorage.setItem('veiculos', JSON.stringify(data.veiculos));                
                 });
     </script>
+    
 
 </body>
 </html>
