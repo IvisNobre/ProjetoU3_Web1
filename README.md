@@ -7,3 +7,4 @@ Jennifer:
 - Página de listar veiculos. Falta: pesquisar sobre e adicionar "Local Storage" no código listar.js.
 
 Rayana:
+- Página de Excluir Veiculos. 
