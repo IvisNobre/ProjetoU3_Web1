@@ -1,43 +1,42 @@
 [
-        {
-            "marca": "Toyota",
-            "modelo": "Corolla",
-            "anoFabricacao": 2020,
-            "cor": "Prata",
-            "tipo": "Sedan",
-            "quilometragem": 30000,
-            "numeroPortas": 4,
-            "urlImagem": "img/w3.jpg"
-        },
-        {
-            "marca": "Chevrolet",
-            "modelo": "Onix",
-            "anoFabricacao": 2019,
-            "cor": "Preto",
-            "tipo": "Hatch",
-            "quilometragem": 50000,
-            "numeroPortas": 4,
-            "urlImagem": "img/w5.jpg"
-        },
-        {
-            "marca": "Ford",
-            "modelo": "EcoSport",
-            "anoFabricacao": 2021,
-            "cor": "Branco",
-            "tipo": "SUV",
-            "quilometragem": 15000,
-            "numeroPortas": 4,
-            "urlImagem": "img/wall-car.jpg"
-        },
-        {
-        "marca": "Volkswagen",
-            "modelo": "Golf",
-            "anoFabricacao": 2018,
-            "cor": "Azul",
-            "tipo": "Hatch",
-            "quilometragem": 45000,
-            "numeroPortas": 4,
-            "urlImagem": "img/wall-car.jpg"
-        }
-    ]
-
+    {
+        "marca": "Toyota",
+        "modelo": "Corolla",
+        "anoFabricacao": 2020,
+        "cor": "Prata",
+        "tipo": "Sedan",
+        "quilometragem": 30000,
+        "numeroPortas": 4,
+        "urlImagem": "img/w3.jpg"
+    },
+    {
+        "marca": "Chevrolet",
+        "modelo": "Onix",
+        "anoFabricacao": 2019,
+        "cor": "Preto",
+        "tipo": "Hatch",
+        "quilometragem": 50000,
+        "numeroPortas": 4,
+        "urlImagem": "img/w5.jpg"
+    },
+    {
+        "marca": "Ford",
+        "modelo": "EcoSport",
+        "anoFabricacao": 2021,
+        "cor": "Branco",
+        "tipo": "SUV",
+        "quilometragem": 15000,
+        "numeroPortas": 4,
+        "urlImagem": "img/wall-car.jpg"
+    },
+    {
+    "marca": "Volkswagen",
+        "modelo": "Golf",
+        "anoFabricacao": 2018,
+        "cor": "Azul",
+        "tipo": "Hatch",
+        "quilometragem": 45000,
+        "numeroPortas": 4,
+        "urlImagem": "img/wall-car.jpg"
+    }
+]

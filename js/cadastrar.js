@@ -4,7 +4,7 @@ console.log(veiculos);
 
 // CLASSE MODELO DE VEÍCULOS
 class Veiculo {
-    constructor(marca, modelo, anoFabricacao, cor, tipo, quilometragem, numeroPortas, url) {
+    constructor(marca, modelo, anoFabricacao, cor, tipo, quilometragem, numeroPortas, urlImagem) {
         this.marca = marca;
         this.modelo = modelo;
         this.anoFabricacao = anoFabricacao;
@@ -12,8 +12,8 @@ class Veiculo {
         this.tipo = tipo;
         this.quilometragem = quilometragem;
         this.numeroPortas = numeroPortas;
-        this.url = url;
-    }
+        this.urlImagem = urlImagem;
+    }    
 }
 
 //FUNÇÕES DE VALIDAÇÃO
@@ -78,15 +78,10 @@ function cadastrarVeiculo() {
     const anoFabricacao = $("#anoFabricacao").val();
     const cor = $("#cor").val();
     const tipo = $("#tipo").val();
-    const quilometragem = $("#quilometragem").val();
+    const quilometragem = parseFloat($("#quilometragem").val());
     const numeroPortas = $("#numeroPortas").val();
-    const url = $("#urlImagem").val();
+    const urlImagem = $("#urlImagem").val();
 
-    if(!validarFormulario(marca,modelo,anoFabricacao,cor,tipo,quilometragem,numeroPortas)){
-        return true;
-    }
-
-    // Verifica se todos os campos foram preenchidos
     if (
         marca === '' || 
         modelo === '' || 
@@ -95,15 +90,23 @@ function cadastrarVeiculo() {
         tipo === '' || 
         quilometragem === '' || 
         numeroPortas === '' ||
-        url === ''
+        urlImagem === ''
     ) {
         alert("Todos os campos devem ser preenchidos.");
         console.log(veiculos);
         return;
     }
 
+    //Verificando se todos os campos estão prenchidos corretamente
+    if (!validarFormulario(marca, modelo, anoFabricacao, cor, tipo, quilometragem, numeroPortas)) {
+        return false;
+    }    
+
+    // Verifica se todos os campos foram preenchidos
+
+
     // Cria um novo veículo
-    const veiculo = new Veiculo( marca, modelo, anoFabricacao, cor, tipo, quilometragem, numeroPortas, url);
+    const veiculo = new Veiculo( marca, modelo, anoFabricacao, cor, tipo, quilometragem, numeroPortas, urlImagem);
 
     veiculos.push(veiculo);
     localStorage.setItem('veiculos', JSON.stringify(veiculos));
@@ -117,13 +120,18 @@ function cadastrarVeiculo() {
 
 // Ao carregar a página, recupera os veículos salvos no localStorage
 $(document).ready(function () {
-    const veiculosSalvos = localStorage.getItem('veiculos');
-    if (veiculosSalvos) {
-        veiculos = JSON.parse(veiculosSalvos);
+    try {
+        const veiculosSalvos = localStorage.getItem('veiculos');
+        if (veiculosSalvos) {
+            veiculos = JSON.parse(veiculosSalvos); // Tenta fazer o parse do JSON.
+        }
+    } catch (e) {
+        console.error("Erro ao fazer o parse do JSON armazenado:", e);
     }
-
     $("#btn-cadastrar").click(cadastrarVeiculo);
     console.log(veiculos);
 });
 
 //FUNÇÕES AUXILIARES
+
+
