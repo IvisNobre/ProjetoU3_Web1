@@ -15,9 +15,10 @@ function carregarCards() {
 
                 const card = `
                     <div class="card" style="width: 100%;">
-                        <img class="card-img-top" src="${carro.imagem}" alt="${carro.modelo}">
+                        <img class="card-img-top" src="${carro.urlImagem}" alt="${carro.modelo}">
                         <div class="card-body">
                             <h3 class="card-title">${carro.marca} - ${carro.modelo}</h3>
+                            <hr>
                             <p><strong>Ano:</strong> ${carro.anoFabricacao}</p>
                             <p><strong>Cor:</strong> ${carro.cor}</p>
                             <p><strong>Tipo:</strong> ${carro.tipo}</p>
