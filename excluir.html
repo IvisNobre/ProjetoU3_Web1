@@ -8,12 +8,27 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/excluir.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/excluir.css">
+    
+
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-3">
-        <h1>Locadora de Veículos</h1>
-    </header>
+    <div class="container custom">
+        <ul>
+            <li class="logo-container">
+                <a href="index.html">
+                    <img src="img/logo.png" style="width: 100px;">
+                </a>
+                <a href="index.html" style="color: aliceblue; font-size: 22px;">Locadora de Veículos</a>
+            </li>
+            
+            <li> <a href="index.html#sobre">Sobre a empresa</a> </li>
+            <li> <a href="listar.html">Listar veículos</a> </li>
+            <li> <a href="cadastrar.html">Cadastrar veículo</a> </li>
+            <li> <a href="excluir.html">Excluir veículo</a> </li>
+        </ul>
+    </div>
 
     <div class="container custom-container mt-5">
         <h2 class="text-center text-secondary mb-4">Excluir Veículos</h2>
@@ -22,9 +37,9 @@
         </div>
     </div>
 
-    <footer class="bg-dark text-white text-center py-3 mt-5">
-        <p>&copy; 2024 Locadora de Veículos. Todos os direitos reservados.</p>
-    </footer>
+    <div class="container custom" style="display: flex; justify-content: center; align-items: center;">
+        <p style="font-size: 18px; color: aliceblue; text-align: center;">2024 © Locadora de Veículos. Todos os direitos reservados.</p>
+    </div>
 
     <script src="js/excluir.js"></script>
 </body>
