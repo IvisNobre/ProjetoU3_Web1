@@ -4,6 +4,6 @@ Ivis:
 - Estou implementando a página de cadastro. Ainda me falta adicionar a imagem, e ver como funciona o Fetch API e o Local Storage
 
 Jennifer:
-- Página de listar em andamento. Está quase finalizada, acredito que só falta eu pesquisar sobre "Local Storage" para adicionar.
+- Página de listar veiculos. Falta: pesquisar sobre e adicionar "Local Storage" no código listar.js.
 
 Rayana:
