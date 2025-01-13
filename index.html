@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" > </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
     <title>Prova 03 WEB 1</title>
 
@@ -20,11 +23,14 @@
     <!-- Basicamente, a HEADER-->
     <div class="container custom">
         <ul>
-            <a href="index.html">
-                <img src="img/logo.png" style="width: 100px;">
-            </a>
-            <li> <a style=" color: aliceblue; font-size: 22px;">Locadora de Veículos</a> </li>
-            <li> <a href="">Sobre a empresa</a> </li>
+            <li class="logo-container">
+                <a href="index.html">
+                    <img src="img/logo.png" style="width: 100px;">
+                </a>
+                <a href="index.html" style="color: aliceblue; font-size: 22px;">Locadora de Veículos</a>
+            </li>
+            
+            <li> <a href="index.html#sobre">Sobre a empresa</a> </li>
             <li> <a href="listar.html">Listar veículos</a> </li>
             <li> <a href="cadastrar.html">Cadastrar veículo</a> </li>
             <li> <a href="">Excluir veículo</a> </li>
@@ -35,23 +41,58 @@
         <img src="img/w4.jpg" class="img-fluid" alt="Modelo padrão de site" width="1140">
         <div style="position: absolute; top: 80%; left: 50%; transform: translate(-50%, -50%);">
             <h3 style="color:  aliceblue;">Bem-vindo à locadora de veículos</h3>
-            <p style="font-family: 'Times New Roman', Times, serif; color: aliceblue;">
+            <p style="color: aliceblue;">
                 Oferecemos os melhores veículos para sua viagem, trabalho ou lazer. Confiança, 
                 segurança e conforto garantidos.</p>
         </div>
     </div>
     
 
-    <!-- 2 colunas para o texto e a imagem no centro da página -->
+    
     <div class="container custom-container">
+        
+        <div class="text-center mb-4"style="padding: 50px; text-align: center;">
+            <h2 class="text-center" padding="50px">Aluguel de carros em Natal, RN</h2>
+            <a href="listar.html" class="btn btn-outline-dark" id="btn-listar" style="width: 85%;">Ver carros disponíveis</a>   
+        </div>
+
+        <div class="row align-items-center" style="background-color: rgb(199, 222, 238); padding-top: 20px; padding-bottom: 20px;">
+            <!-- Coluna da Imagem -->
+            <div class="col-md-6 text-center">
+                <img src="img/viagem.jpg" class="img-fluid" style="max-width: 100%; height: auto;">
+            </div>
+            <!-- Coluna do Texto -->
+            <div class="col-md-6">
+                
+                <h5>10 Motivos para o Aluguel de Carros em Natal:</h5>
+                <ol>
+                    <li>Explorar as Belezas Naturais</li>
+                    <li>Liberdade e conforto</li>
+                    <li>Economia em Grupo</li>
+                    <li>Facilidade para Chegar em Locais Turísticos</li>
+                    <li>Maior Mobilidade e Flexibilidade</li>
+                    <li>Conveniência no Transporte</li>
+                    <li>Acesso ao Interior</li>
+                    <li>Viagem Segura e Tranquila</li>
+                    <li>Maior Agilidade</li>
+                    <li>Conhecimento Cultural</li>
+                </ol>
+                
+            </div>
+        </div>
+    </div>
+        
+    </div>
+    <div class="container custom-container" id="sobre">
         <div class="row align-items-center">
             <!-- Coluna 1 -->
             <div style="padding: 30px;">
+                <hr>
                 <h2 style="text-align: left;">Sobre nós<br></h2>
                 <hr>
                 <p style="text-align: justify;">
                     Fundada com o propósito de oferecer soluções práticas e acessíveis para a mobilidade de nossos clientes, 
-                    a Locadora de veículos é referência no mercado de locação. Com anos de experiência, 
+                    a Locadora de veículos CARS é referência no mercado de locação. Com anos de experiência, 
                     somos uma empresa comprometida com a excelência no atendimento e a qualidade dos serviços. 
                     Nossa missão é proporcionar a melhor experiência ao cliente, seja para viagens de negócios, 
                     turismo ou necessidades cotidianas. Contamos com uma ampla frota de veículos modernos, 
@@ -61,12 +102,16 @@
                     atendimento personalizado e suporte em todas as etapas do processo. 
                     A Locadora de Veículos é mais do que uma empresa, somos seu parceiro na estrada. 
                     Venha conhecer nossos serviços e descubra por que somos a escolha certa pra você.</p>
-            </div>           
+                <p> Com um compromisso constante com a inovação, buscamos sempre melhorar nossos processos 
+                    e garantir que nossos veículos atendam às mais altas exigências de qualidade e segurança. 
+                    Nossa equipe está sempre disponível para ajudar, oferecendo suporte 24 horas para qualquer 
+                    necessidade que possa surgir durante o período de locação. Sabemos que cada cliente tem suas próprias necessidades, por isso, personalizamos nossos serviços para garantir a melhor solução para você, seja para viagens longas ou para o dia a dia.</p>
+                </div>           
         </div>
     </div>
     
     <div class="container custom" style="display: flex; justify-content: center; align-items: center;">
-        <p style="font-size: 18px; color: aliceblue; text-align: center;">2024 Locadora de Veículos. Todos os direitos reservados.</p>
+        <p style="font-size: 18px; color: aliceblue; text-align: center;">2024 © Locadora de Veículos. Todos os direitos reservados.</p>
     </div>
     
    

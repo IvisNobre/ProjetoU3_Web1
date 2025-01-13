@@ -1,5 +1,4 @@
-{
-    "veiculos": [
+[
         {
             "marca": "Toyota",
             "modelo": "Corolla",
@@ -8,7 +7,7 @@
             "tipo": "Sedan",
             "quilometragem": 30000,
             "numeroPortas": 4,
-            "urlImagem": "https://via.placeholder.com/150?text=Corolla"
+            "urlImagem": "img/w3.jpg"
         },
         {
             "marca": "Chevrolet",
@@ -18,7 +17,7 @@
             "tipo": "Hatch",
             "quilometragem": 50000,
             "numeroPortas": 4,
-            "urlImagem": "https://via.placeholder.com/150?text=Onix"
+            "urlImagem": "img/w5.jpg"
         },
         {
             "marca": "Ford",
@@ -28,17 +27,17 @@
             "tipo": "SUV",
             "quilometragem": 15000,
             "numeroPortas": 4,
-            "urlImagem": "https://via.placeholder.com/150?text=EcoSport"
+            "urlImagem": "img/wall-car.jpg"
         },
         {
-            "marca": "Volkswagen",
+        "marca": "Volkswagen",
             "modelo": "Golf",
             "anoFabricacao": 2018,
             "cor": "Azul",
             "tipo": "Hatch",
             "quilometragem": 45000,
             "numeroPortas": 4,
-            "urlImagem": "https://via.placeholder.com/150?text=Golf"
+            "urlImagem": "img/wall-car.jpg"
         }
     ]
-}
+
