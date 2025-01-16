@@ -1,6 +1,5 @@
 let veiculos = [];
 
-console.log(veiculos);
 
 // CLASSE MODELO DE VEÍCULOS
 class Veiculo {
@@ -93,7 +92,6 @@ function cadastrarVeiculo() {
         urlImagem === ''
     ) {
         alert("Todos os campos devem ser preenchidos.");
-        console.log(veiculos);
         return;
     }
 
@@ -112,7 +110,6 @@ function cadastrarVeiculo() {
     localStorage.setItem('veiculos', JSON.stringify(veiculos));
 
     alert("Veículo cadastrado com sucesso!");
-    console.log(veiculos);
 
     // Limpa os campos do formulário
     $("#marca, #modelo, #anoFabricacao, #cor, #tipo, #quilometragem, #numeroPortas").val("");
@@ -126,10 +123,8 @@ $(document).ready(function () {
             veiculos = JSON.parse(veiculosSalvos); // Tenta fazer o parse do JSON.
         }
     } catch (e) {
-        console.error("Erro ao fazer o parse do JSON armazenado:", e);
     }
     $("#btn-cadastrar").click(cadastrarVeiculo);
-    console.log(veiculos);
 });
 
 //FUNÇÕES AUXILIARES
