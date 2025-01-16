@@ -9,12 +9,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" > </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
     <title>Prova 03 WEB 1</title>
 
@@ -25,9 +22,9 @@
         <ul>
             <li class="logo-container">
                 <a href="index.html">
-                    <img src="img/logo.png" style="width: 100px;">
+                    <img src="../img/logo.png" class="logo-img">
                 </a>
-                <a href="index.html" style="color: aliceblue; font-size: 22px;">Locadora de Veículos</a>
+                <a href="index.html" class="logo-text">Locadora de Veículos</a>
             </li>
             
             <li> <a href="index.html#sobre">Sobre a empresa</a> </li>
@@ -37,33 +34,30 @@
         </ul>
     </div>
 
-    <div class="container" style="position: relative; padding: 0; text-align: center;">
-        <img src="img/w4.jpg" class="img-fluid" alt="Modelo padrão de site" width="1140">
-        <div style="position: absolute; top: 80%; left: 50%; transform: translate(-50%, -50%);">
-            <h3 style="color:  aliceblue;">Bem-vindo à locadora de veículos</h3>
-            <p style="color: aliceblue;">
+    <div class="container banner-container">
+        <img src="../img/w4.jpg" class="img-fluid banner-img" alt="Modelo padrão de site">
+        <div class="banner-text">
+            <h3>Bem-vindo à locadora de veículos</h3>
+            <p>
                 Oferecemos os melhores veículos para sua viagem, trabalho ou lazer. Confiança, 
                 segurança e conforto garantidos.</p>
         </div>
     </div>
-    
 
-    
     <div class="container custom-container">
         
-        <div class="text-center mb-4"style="padding: 50px; text-align: center;">
-            <h2 class="text-center" padding="50px">Aluguel de carros em Natal, RN</h2>
-            <a href="listar.html" class="btn btn-outline-dark" id="btn-listar" style="width: 85%;">Ver carros disponíveis</a>   
+        <div class="text-center mb-4 intro-section">
+            <h2>Aluguel de carros em Natal, RN</h2>
+            <a href="listar.html" class="btn btn-outline-dark btn-listar">Ver carros disponíveis</a>   
         </div>
 
-        <div class="row align-items-center" style="background-color: rgb(199, 222, 238); padding-top: 20px; padding-bottom: 20px;">
+        <div class="row align-items-center info-section">
             <!-- Coluna da Imagem -->
             <div class="col-md-6 text-center">
-                <img src="img/viagem.jpg" class="img-fluid" style="max-width: 100%; height: auto;">
+                <img src="../img/viagem.jpg" class="img-fluid viagem-img">
             </div>
             <!-- Coluna do Texto -->
             <div class="col-md-6">
-                
                 <h5>10 Motivos para o Aluguel de Carros em Natal:</h5>
                 <ol>
                     <li>Explorar as Belezas Naturais</li>
@@ -77,20 +71,18 @@
                     <li>Maior Agilidade</li>
                     <li>Conhecimento Cultural</li>
                 </ol>
-                
             </div>
         </div>
     </div>
-        
-    </div>
+
     <div class="container custom-container" id="sobre">
         <div class="row align-items-center">
             <!-- Coluna 1 -->
-            <div style="padding: 30px;">
+            <div class="about-section">
                 <hr>
-                <h2 style="text-align: left;">Sobre nós<br></h2>
+                <h2>Sobre nós<br></h2>
                 <hr>
-                <p style="text-align: justify;">
+                <p>
                     Fundada com o propósito de oferecer soluções práticas e acessíveis para a mobilidade de nossos clientes, 
                     a Locadora de veículos CARS é referência no mercado de locação. Com anos de experiência, 
                     somos uma empresa comprometida com a excelência no atendimento e a qualidade dos serviços. 
@@ -101,35 +93,47 @@
                     Por isso, trabalhamos constantemente para superar expectativas, oferecendo planos flexíveis, 
                     atendimento personalizado e suporte em todas as etapas do processo. 
                     A Locadora de Veículos é mais do que uma empresa, somos seu parceiro na estrada. 
-                    Venha conhecer nossos serviços e descubra por que somos a escolha certa pra você.</p>
-                <p> Com um compromisso constante com a inovação, buscamos sempre melhorar nossos processos 
+                    Venha conhecer nossos serviços e descubra por que somos a escolha certa pra você.
+                </p>
+                <p>
+                    Com um compromisso constante com a inovação, buscamos sempre melhorar nossos processos 
                     e garantir que nossos veículos atendam às mais altas exigências de qualidade e segurança. 
                     Nossa equipe está sempre disponível para ajudar, oferecendo suporte 24 horas para qualquer 
-                    necessidade que possa surgir durante o período de locação. Sabemos que cada cliente tem suas próprias necessidades, por isso, personalizamos nossos serviços para garantir a melhor solução para você, seja para viagens longas ou para o dia a dia.</p>
-                </div>           
+                    necessidade que possa surgir durante o período de locação. Sabemos que cada cliente tem suas próprias necessidades, por isso, personalizamos nossos serviços para garantir a melhor solução para você, seja para viagens longas ou para o dia a dia.
+                </p>
+            </div>           
         </div>
     </div>
-    
-    <div class="container custom" style="display: flex; justify-content: center; align-items: center;">
-        <p style="font-size: 18px; color: aliceblue; text-align: center;">2024 © Locadora de Veículos. Todos os direitos reservados.</p>
+
+    <div class="container custom footer">
+        <p>2024 © Locadora de Veículos. Todos os direitos reservados.</p>
     </div>
-    
-   
+
     <script>
-        // Carrega os dados dos veículos do JSON e armazena no localStorage
-        fetch('https://my-json-server.typicode.com/IvisNobre/ProjetoU3_Web1/db')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error("Erro ao carregar os dados!");
-                }
-                return response.json();
-            })
-            .then(data => {
-                // Salva os dados no localStorage
-                localStorage.setItem('veiculos', JSON.stringify(data.veiculos));                
-                });
+        document.addEventListener("DOMContentLoaded", () => {
+            const url = "https://my-json-server.typicode.com/IvisNobre/ProjetoU3_Web1/api/db";
+
+            // Verifica se o localStorage está ausente ou vazio
+            const veiculosSalvos = localStorage.getItem('veiculos');
+            if (!veiculosSalvos || JSON.parse(veiculosSalvos).length === 0) {
+                fetch(url)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error("Erro ao carregar os dados!");
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        // Salva os dados no localStorage
+                        localStorage.setItem('veiculos', JSON.stringify(data.veiculos));
+                        console.log("Dados da API carregados no localStorage");
+                    })
+                    .catch(error => console.error("Erro ao carregar os dados:", error));
+            } else {
+                console.log("LocalStorage já contém dados:", JSON.parse(veiculosSalvos));
+            }
+        });
     </script>
-    
 
 </body>
 </html>

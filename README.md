@@ -1,10 +1,10 @@
 Quaisquer mudanças ou algo que queira implementar podem falar aqui, também para saber como anda o projeto e o que estão implementando no momento em seus códigos.
 
 Ivis:
-- a
+- Finalizado.
 
 Jennifer:
-- Página de listar veiculos. Falta: pesquisar sobre e adicionar "Local Storage" no código listar.js.
+- Finalizado.
 
 Rayana:
-- Página de Excluir Veiculos. 
+- Finalizado.

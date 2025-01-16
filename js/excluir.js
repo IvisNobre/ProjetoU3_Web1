@@ -43,7 +43,7 @@ function excluirVeiculo(index) {
     veiculos.splice(index, 1); 
     localStorage.setItem('veiculos', JSON.stringify(veiculos)); 
     carregarVeiculos(); 
-    console.log(veiculos);
+    // console.log(veiculos);
 }
 
 

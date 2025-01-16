@@ -1,0 +1,22 @@
+.logo-img {
+    width: 100px;
+}
+
+.logo-text {
+    color: aliceblue;
+    font-size: 22px;
+}
+
+.intro-section {
+    padding: 30px;
+}
+
+.intro-heading {
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 18px;
+    color: aliceblue;
+    text-align: center;
+}

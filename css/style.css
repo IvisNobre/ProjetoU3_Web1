@@ -1,78 +1,141 @@
 * {
-  margin: 0;
-  padding: 0;
-}
-
-
-.container{
-width: 100%;
-}
-
-.interna {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%;
+  }
+  
+  .interna {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-body{
+  }
+  
+  body {
     background-color: rgb(15, 14, 14);
     font-family: 'Quicksand', sans-serif;
-    
-}
-
-.custom-container {
-    background-color: white;   
-}
-
-.custom {
-    background-color:  rgb(15, 14, 14);
-}
-ol {
+  }
+  
+  .custom-container {
+    background-color: white;
+  }
+  
+  .custom {
+    background-color: rgb(15, 14, 14);
+  }
+  
+  ol {
     padding-left: 20px; /* Ajusta o espaço interno da lista */
-    
-}
-.col-md-6 h5,ol{
+  }
+  
+  .col-md-6 h5,
+  ol {
     font-family: 'Quicksand', sans-serif;
     font-size: 140%;
-    
     color: #333;
-}
-
-
-.custom-text {
-    color: black;
-}
-
-
-p, h1, h2 {
+  }
+  
+  .custom-text,
+  p,
+  h1,
+  h2 {
     color: black;
     font-family: 'Quicksand', sans-serif;
+  }
+  
+  p,
+  h1,
+  h2 {
     font-weight: 400;
-}
-h3, h4, h5 {
-    color: black;
-    font-family: 'Quicksand', sans-serif;
+  }
+  
+  h3,
+  h4,
+  h5 {
     font-weight: 600;
-}
-
-
-ul{
+  }
+  
+  ul {
     font-family: 'Quicksand', sans-serif;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
     align-items: center;
     padding: 2px;
-    margin: 0px;
+    margin: 0;
     color: aliceblue;
-}
-
-ul .logo-container {
+  }
+  
+  ul .logo-container {
     display: flex;
     align-items: center;
     padding-right: 200px;
-}
-
-a{
+  }
+  
+  a {
     color: aliceblue;
-}
+  }
+  
+  .logo-img {
+    width: 100px;
+  }
+  
+  .logo-text {
+    color: aliceblue;
+    font-size: 22px;
+  }
+  
+  .banner-container {
+    position: relative;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .banner-img {
+    width: 1140px;
+  }
+  
+  .banner-text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+  }
+  
+  .intro-section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .btn-listar {
+    width: 85%;
+  }
+  
+  .info-section {
+    background-color: rgb(199, 222, 238);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .viagem-img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .about-section {
+    padding: 30px;
+    text-align: justify;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: aliceblue;
+    text-align: center;
+  }
+  
