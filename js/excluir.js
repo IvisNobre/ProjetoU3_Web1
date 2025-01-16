@@ -1,6 +1,6 @@
 let veiculos = [];
 
-// Função para carregar veículos do localStorage
+
 function carregarVeiculos() {
     const veiculosSalvos = localStorage.getItem('veiculos');
     veiculos = veiculosSalvos ? JSON.parse(veiculosSalvos) : [];
@@ -21,7 +21,7 @@ function carregarVeiculos() {
         col.className = "col-md-4 mb-4";
         col.innerHTML = `
             <div class="card h-100">
-                <img src="${veiculo.url}" class="card-img-top" alt="${veiculo.modelo}">
+                <img src="${veiculo.urlImagem}" class="card-img-top" alt="${veiculo.modelo}">
                 <div class="card-body">
                     <h5 class="card-title text-primary">${veiculo.marca} - ${veiculo.modelo}</h5>
                     <hr>
@@ -38,13 +38,13 @@ function carregarVeiculos() {
     });
 }
 
-// Função para excluir veículo
+
 function excluirVeiculo(index) {
-    veiculos.splice(index, 1); // Remove o veículo do array
-    localStorage.setItem('veiculos', JSON.stringify(veiculos)); // Atualiza o localStorage
-    carregarVeiculos(); // Recarrega a lista
-    console.log(veiculos)
+    veiculos.splice(index, 1); 
+    localStorage.setItem('veiculos', JSON.stringify(veiculos)); 
+    carregarVeiculos(); 
+    console.log(veiculos);
 }
 
-// Inicializa ao carregar a página
+
 document.addEventListener("DOMContentLoaded", carregarVeiculos);
